@@ -1,0 +1,18 @@
+public class SSO@(c, s, a) {
+	public static Integer @ ( c ) run( DiChannel @ ( c, s ) < Serializable > chCS, DiChannel @ ( s, c ) < Serializable > chSC, DiChannel @ ( c, a ) < Serializable > chCA, DiChannel @ ( a, c ) < Serializable > chAC, DiChannel @ ( s, a ) < Serializable > chSA, DiChannel @ ( a, s ) < Serializable > chAS, Integer @ ( c ) creds_c, Supplier @ ( s ) < Integer > newToken_s, Integer @ ( a ) x_a, Function @ ( a ) < Integer, Boolean > valid_a ) {
+		x_a = chCA.< Integer >com( creds_c );
+		if( valid_a.apply( x_a ) ){
+			chAS.< Choice >select( Choice@a.OK );
+			chSC.< Choice >select( Choice@s.TOKEN );
+			Integer @ ( c ) t_c = chSC.< Integer >com( newToken_s.get() );
+			return t_c;
+		} else { 
+			chAS.< Choice >select( Choice@a.KO );
+			chSC.< Choice >select( Choice@s.ERROR );
+			Integer @ ( c ) t_c;
+			t_c = SSO @ ( c, s, a ).run( chCS, chSC, chCA, chAC, chSA, chAS, creds_c, newToken_s, x_a, valid_a );
+			return t_c;
+		}
+	}
+
+}

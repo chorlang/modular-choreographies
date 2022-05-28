@@ -1,0 +1,1 @@
+run(p:proc(add:(String) -> String, sub:(String,String) -> String),q:proc(x:String,y:String)):(){p.add(p."hej") -> q.x; p.sub(p."he",p."hi") -> q.y}

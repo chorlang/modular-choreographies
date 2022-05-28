@@ -1,0 +1,6 @@
+public class X@p {
+	public static void run() {
+		Integer @ ( p ) y_p = 1@p;
+	}
+
+}

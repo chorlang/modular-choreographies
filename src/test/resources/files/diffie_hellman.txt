@@ -1,0 +1,4 @@
+DiffieHellman(Alice:proc(modPow:(int,int,int)->int, g:int, p:int, a:int), Bob:proc(modPow:(int,int,int)->int, g:int, p:int, b:int)):(Alice:proc(int), Bob:proc(int)){
+ Alice.modPow(g,a,p) -> var Bob.x:int
+ Bob.modPow(g,b,p) -> var Alice.y:int
+ return Alice.(modPow(y,a,p)),Bob.(modPow(x,b,p));}

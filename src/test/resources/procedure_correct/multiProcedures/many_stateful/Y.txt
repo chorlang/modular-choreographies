@@ -1,0 +1,7 @@
+public class Y@(p, q) {
+	public static void run( DiChannel@(p,q)<Serializable>chPQ,DiChannel@(q,p)<Serializable>chQP, BiFunction @ ( p ) < Integer, Integer, Integer > sub_p, Function @ ( p ) < String, String > print_p ) {
+		Integer @ ( q ) y_q = chPQ.< Integer >com( sub_p.apply( 4@p, 3@p ) );
+		String @ ( q ) z_q = chPQ.< String >com( print_p.apply( "Hello"@p ) );
+	}
+
+}

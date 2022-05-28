@@ -1,0 +1,1 @@
+run(p:proc(add:(Double) -> Double, sub:(Double,Double) -> Double),q:proc(x:Double,y:Double)):(){p.add(p.10.0) -> q.x; p.sub(p.20.2,p.30.3) -> q.y}

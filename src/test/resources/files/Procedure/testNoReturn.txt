@@ -1,0 +1,1 @@
+X(p:proc(print:(String) -> String), q:proc(sub:(int,int) -> int)):(p:proc(int)){q.sub(q.1,q.2)-> var p.z:int; p.print(z) -> var q.y:int}

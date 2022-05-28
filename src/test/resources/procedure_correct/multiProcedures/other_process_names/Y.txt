@@ -1,0 +1,9 @@
+public class Y@(alice, bob) {
+	public static void run( DiChannel@(alice,bob)<Serializable>chAB,DiChannel@(bob,alice)<Serializable>chBA, BiFunction @ ( alice ) < Integer, Integer, Integer > sub_alice, Integer @ ( alice ) x_alice, Integer @ ( bob ) y_bob, Integer @ ( bob ) x_bob ) {
+		Tuple2 @ ( alice, bob ) < Integer, Integer > tuple1 = X @ ( alice, bob ).run( chAB,chBA, sub_alice, x_bob );
+		Integer @ ( alice ) x_alice = tuple1._1();
+		Integer @ ( bob ) y_bob = tuple1._2();
+		x_bob = chAB.< Integer >com( 5@alice );
+	}
+
+}

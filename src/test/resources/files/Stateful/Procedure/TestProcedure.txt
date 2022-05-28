@@ -1,0 +1,2 @@
+X(p:proc(add:(int,int) -> int, z:int), q:proc(sub:(int,int) -> int, x:int, y:int)):(){p.add(p.2,p.3) -> q.x; q.sub(q.1,q.2)->p.z; p.add(z,p.5) -> q.y}
+Y(p:proc(sub:(int,int) -> int,print:(String) -> String),q:proc(y:int,z:String)):(){p.sub(p.4,p.3) -> q.y; p.print(p."Hello") -> q.z}

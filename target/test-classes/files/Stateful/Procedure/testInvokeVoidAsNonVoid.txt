@@ -1,0 +1,2 @@
+X(p:proc(add:(int)->int),q:proc(x:int)):(){ p.add(p.5) -> q.x }
+Y(alice:proc(sub:(int)->int, x:int),bob:proc(z:int,x:int,y:int)):(){ alice.(x),bob.(y) = X(alice.(sub),bob.(z)); alice.5 -> bob.x }

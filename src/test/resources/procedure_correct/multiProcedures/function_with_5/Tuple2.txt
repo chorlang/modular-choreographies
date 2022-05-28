@@ -1,0 +1,18 @@
+public class Tuple2@(R1, R2)<T1 @ ( R1 ), T2 @ ( R2 )> {
+	private final T1 @ ( R1 ) _1;
+	private final T2 @ ( R2 ) _2;
+
+	public Tuple2( T1 @ ( R1 ) _1, T2 @ ( R2 ) _2 ) {
+		this._1 = _1;
+		this._2 = _2;
+	}
+
+	public T1 @ ( R1 ) _1() {
+		return _1;
+	}
+	
+	public T2 @ ( R2 ) _2() {
+		return _2;
+	}
+
+}

@@ -1,0 +1,8 @@
+public class run@(p, r, s, a) {
+	public static void run( DiChannel @ ( p, r ) < Serializable > chPR, DiChannel @ ( r, p ) < Serializable > chRP, DiChannel @ ( p, s ) < Serializable > chPS, DiChannel @ ( s, p ) < Serializable > chSP, DiChannel @ ( p, a ) < Serializable > chPA, DiChannel @ ( a, p ) < Serializable > chAP, DiChannel @ ( r, s ) < Serializable > chRS, DiChannel @ ( s, r ) < Serializable > chSR, DiChannel @ ( r, a ) < Serializable > chRA, DiChannel @ ( a, r ) < Serializable > chAR, DiChannel @ ( s, a ) < Serializable > chSA, DiChannel @ ( a, s ) < Serializable > chAS ) {
+		chPR.com( null );
+		chRS.com( null );
+		chRA.com( null );
+	}
+
+}

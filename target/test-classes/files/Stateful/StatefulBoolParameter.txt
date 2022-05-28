@@ -1,0 +1,1 @@
+run(p:proc(add:(Boolean) -> Boolean, sub:(Bool,Bool) -> Bool),q:proc(x:Bool,y:Bool)):(){p.add(p.true) -> q.x; p.sub(p.true,p.false) -> q.y}

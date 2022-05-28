@@ -1,0 +1,6 @@
+public class X@(p, q) {
+	public static void run( DiChannel@(p,q) < Serializable > chPQ, DiChannel@(q,p) < Serializable > chQP, Function3 @ ( p ) < Integer, Integer, Integer, Integer > add_p, Integer @ ( p ) x_p, Integer @ ( q ) x_q ) {
+		Integer @ ( q ) y_q = chPQ.< Integer >com( add_p.apply( 5@p, 3@p, 2@p ) );
+	}
+
+}

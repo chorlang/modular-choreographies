@@ -1,0 +1,6 @@
+public class Y@(p, q) {
+	public static void run( DiChannel@(p,q)<Serializable>chPQ,DiChannel@(q,p)<Serializable>chQP, Integer @ ( q ) y_q ) {
+		y_q = X @ ( p, q ).run( chPQ,chQP );
+	}
+
+}

@@ -1,0 +1,7 @@
+public class X@(p, q) {
+	public static Tuple2 @ ( p, q ) < Integer, Integer > run( DiChannel@(p,q)<Serializable>chPQ,DiChannel@(q,p)<Serializable>chQP, Function3 @ ( p ) < Integer, Integer, Integer, Integer > add_p ) {
+		Integer @ ( q ) x_q = chPQ.< Integer >com( add_p.apply( 5@p, 3@p, 1@p ) );
+		return new Tuple2 @ ( p, q )<Integer,Integer>( 1@p, 3@q );
+	}
+
+}

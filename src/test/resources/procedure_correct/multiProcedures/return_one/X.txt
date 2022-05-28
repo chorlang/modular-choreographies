@@ -1,0 +1,7 @@
+public class X@(p, q) {
+	public static Integer @ ( q ) run( DiChannel@(p,q)<Serializable>chPQ,DiChannel@(q,p)<Serializable>chQP ) {
+		Integer @ ( q ) x_q = chPQ.< Integer >com( 2@p );
+		return x_q ;
+	}
+
+}

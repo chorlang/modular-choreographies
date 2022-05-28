@@ -1,0 +1,7 @@
+public class run@(p, q) {
+	public static void run( DiChannel@(p,q)<Serializable>chPQ,DiChannel@(q,p)<Serializable>chQP, Function @ ( p ) < String, String > add_p, BiFunction @ ( p ) < String, String, String > sub_p, String @ ( q ) x_q, String @ ( q ) y_q ) {
+		x_q = chPQ.< String >com( add_p.apply( "hej"@p ) );
+		y_q = chPQ.< String >com( sub_p.apply( "he"@p, "hi"@p ) );
+	}
+
+}

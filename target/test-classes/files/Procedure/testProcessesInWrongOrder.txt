@@ -1,0 +1,2 @@
+X(p:proc(add:(int,int,int)->int),q:proc()):(p:proc(int),q:proc(int)){ p.add(p.5,p.3,p.1) -> var q.x:int; return p.(1),q.(3) }
+Y(p:proc(sub:(int,int,int)->int,x:int),q:proc(y:int)):(){ p.(x),q.(y) = X(q.(),p.(sub)); p.5 -> var q.x:int }

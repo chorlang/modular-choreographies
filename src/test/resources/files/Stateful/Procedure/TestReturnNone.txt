@@ -1,0 +1,2 @@
+X(p:proc(),q:proc(x:int)):(){p.2 -> q.x }
+Y(p:proc(),q:proc(x:int)):(){X(p.(),q.(x))}

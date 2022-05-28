@@ -1,0 +1,10 @@
+public class X@(p, q, r) {
+	public static void run( DiChannel@(p,q)<Serializable>chPQ,DiChannel@(q,p)<Serializable>chQP,DiChannel@(p,r)<Serializable>chPR,DiChannel@(r,p)<Serializable>chRP,DiChannel@(q,r)<Serializable>chQR,DiChannel@(r,q)<Serializable>chRQ, Function3 @ ( p ) < Integer, Integer, Integer, Integer > add_p, Integer @ ( p ) x_p, Integer @ ( q ) x_q ) {
+		if( true@p ){
+			Integer @ ( r ) x_r = chPR.< Integer >com( add_p.apply( 5@p, 3@p, 2@p ) );
+		} else { 
+			x_q = chPQ.< Integer >com( add_p.apply( 5@p, 3@p, 1@p ) );
+		}
+	}
+
+}

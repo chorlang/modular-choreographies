@@ -1,0 +1,1 @@
+PP(p:proc(),q:proc()):(){p -> q[SIGNAL]; PP(q.(),p.());}

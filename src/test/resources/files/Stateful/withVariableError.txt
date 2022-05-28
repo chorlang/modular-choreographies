@@ -1,0 +1,1 @@
+run(p:proc(add:(int,int) -> int, sub:(int,int) -> int),q:proc(y:int)):(){p.add(p.2,p.3) -> q. ; p.sub(p.4,p.3) -> q.y}

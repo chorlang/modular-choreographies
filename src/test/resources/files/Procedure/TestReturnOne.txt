@@ -1,0 +1,2 @@
+X(p:proc(),q:proc()):(q:proc(int)){p.2 -> var q.x:int; return q.x}
+Y(p:proc(),q:proc(y:int)):(){q.y = X(p.(),q.())}

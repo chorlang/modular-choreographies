@@ -1,0 +1,7 @@
+public class PP@(p, q) {
+	public static void run( DiChannel @ ( p, q ) < Serializable > chPQ, DiChannel @ ( q, p ) < Serializable > chQP ) {
+		chPQ.< Choice >select( Choice@p.SIGNAL );
+		PP @ ( q, p ).run( chQP, chPQ );
+	}
+
+}

@@ -1,0 +1,9 @@
+public class Y@(p, q) {
+	public static void run( DiChannel@(p,q)<Serializable>chPQ,DiChannel@(q,p)<Serializable>chQP, Function3 @ ( p ) < Integer, Integer, Integer, Integer > sub_p, Integer @ ( p ) x_p, Integer @ ( p ) y_p ) {
+		Tuple1 @ ( p ) < Integer, Integer > tuple1 = X @ ( p, q ).run( chPQ,chQP, sub_p );
+		Integer @ ( p ) x_p = tuple1._1();
+		Integer @ ( p ) y_p = tuple1._2();
+		Integer @ ( q ) x_q = chPQ.< Integer >com( 5@p );
+	}
+
+}

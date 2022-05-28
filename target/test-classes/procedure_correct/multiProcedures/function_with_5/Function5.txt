@@ -1,0 +1,3 @@
+public interface Function5@A<T1 @ ( A ), T2 @ ( A ), T3 @ ( A ), T4 @ ( A ), T5 @ ( A ), R @ ( A )> {
+	public R @ ( A ) apply( T1 @ ( A ) t1, T2 @ ( A ) t2, T3 @ ( A ) t3, T4 @ ( A ) t4, T5 @ ( A ) t5 );
+}

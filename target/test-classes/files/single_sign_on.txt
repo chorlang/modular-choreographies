@@ -1,0 +1,15 @@
+SSO(c:proc(creds:int),s:proc(newToken:()->int),a:proc(x:int, valid:(int)->bool)):(c:proc(int)){
+  c.creds -> a.x
+  if a.valid(x) {
+     a -> s[OK]
+     s->c[TOKEN]
+     s.newToken() -> var c.t:int
+     return c.t
+  } else {
+     a -> s[KO]
+     s -> c[ERROR]
+     var c.t:int
+     c.t = SSO(c.(creds),s.(newToken),a.(x,valid))
+     return c.t
+  }
+}

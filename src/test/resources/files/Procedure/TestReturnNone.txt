@@ -1,0 +1,2 @@
+X(p:proc(),q:proc()):(){p.2 -> var q.x:int }
+Y(p:proc(),q:proc()):(){X(p.(),q.())}

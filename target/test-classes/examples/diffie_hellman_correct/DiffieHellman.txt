@@ -1,0 +1,8 @@
+public class DiffieHellman@(Alice, Bob) {
+	public static Tuple2 @ ( Alice, Bob ) < Integer, Integer > run( DiChannel @ ( Alice, Bob ) < Serializable > chAB, DiChannel @ ( Bob, Alice ) < Serializable > chBA, Function3 @ ( Alice ) < Integer, Integer, Integer, Integer > modPow_Alice, Integer @ ( Alice ) g_Alice, Integer @ ( Alice ) p_Alice, Integer @ ( Alice ) a_Alice, Function3 @ ( Bob ) < Integer, Integer, Integer, Integer > modPow_Bob, Integer @ ( Bob ) g_Bob, Integer @ ( Bob ) p_Bob, Integer @ ( Bob ) b_Bob ) {
+		Integer @ ( Bob ) x_Bob = chAB.< Integer >com( modPow_Alice.apply( g_Alice, a_Alice, p_Alice ) );
+		Integer @ ( Alice ) y_Alice = chBA.< Integer >com( modPow_Bob.apply( g_Bob, b_Bob, p_Bob ) );
+		return new Tuple2 @ ( Alice, Bob ) < Integer, Integer >( modPow_Alice.apply( y_Alice, a_Alice, p_Alice ), modPow_Bob.apply( x_Bob, b_Bob, p_Bob ) );
+	}
+
+}

@@ -1,0 +1,1 @@
+X(p.add:(int,int)->int,q.sub:(int,int)->int):(p.int,q.int){return p.3,q.2;}

@@ -1,0 +1,1 @@
+run(p:proc(),r:proc(),s:proc(),a:proc()):(){p->r;r -> s;r->a}
